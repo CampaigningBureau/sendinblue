@@ -29,9 +29,9 @@ class SendinblueServiceProvider extends ServiceProvider {
 		}
 		elseif ($version[0] == 5)
 		{
-			$this->publishes([
+			$this->publishes(array(
 				__DIR__.'/../../config/config.php' => config_path('sendinblue.php'),
-			]);
+			));
 		}
 	}
 
